@@ -13,7 +13,7 @@
   <div id="header" role="banner">
     <div class="inner clearfix">
       <h1 class="site-id">
-        <a href="#"><img src="<?php bloginfo('template_url') ?>/<?php bloginfo('template_url') ?>/images/site_id.png" width="322" height="42" alt="魅力あふれるアジア・太平洋の旅ならアジアパシフィック旅行社" /></a>
+        <a href="#"><img src="<?php bloginfo('template_url') ?>/images/site_id.png" width="322" height="42" alt="魅力あふれるアジア・太平洋の旅ならアジアパシフィック旅行社" /></a>
       </h1>
       <div class="utility">
         <ul>
