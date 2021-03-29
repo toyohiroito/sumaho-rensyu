@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <title>アジアパシフィック旅行社</title>
-<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url') ?>" />
 <link rel="shortcut icon" href="images/favicon.ico" />
 <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png" />
 </head>
