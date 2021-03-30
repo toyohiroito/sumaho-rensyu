@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url') ?>" />
 <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/images/favicon.ico" />
 <link rel="apple-touch-icon-precomposed" href="<?php bloginfo('template_url') ?>/images/apple-touch-icon.png" />
+<?php wp_head(); ?>
 </head>
 
 <body class="home">
