@@ -4,9 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 <title>アジアパシフィック旅行社</title>
-<link rel="stylesheet" type="text/css" media="all" href="style.css" />
-<link rel="shortcut icon" href="images/favicon.ico" />
-<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
+<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico" />
+<link rel="apple-touch-icon-precomposed" href="<?php bloginfo('template_url'); ?>/images/apple-touch-icon.png" />
 </head>
 
 <body class="home">
@@ -14,11 +14,11 @@
   <div id="header" role="banner">
     <div class="inner clearfix">
       <h1 class="site-id">
-        <a href="#"><img src="images/site_id.png" width="205" height="30" alt="魅力あふれるアジア・太平洋の旅ならアジアパシフィック旅行社" /></a>
+        <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/site_id.png" width="205" height="30" alt="魅力あふれるアジア・太平洋の旅ならアジアパシフィック旅行社" /></a>
       </h1>
       <div id="global_nav" role="navigation">
         <ul>
-          <li class="gnav"><a id="sp_menu" href="#"><img src="images/gnav.png" width="50" height="30" alt="MENU" /></a></li>
+          <li class="gnav"><a id="sp_menu" href="#"><img src="<?php bloginfo('template_url'); ?>/images/gnav.png" width="50" height="30" alt="MENU" /></a></li>
         </ul>
       </div><!-- #global_nav end -->
     </div><!-- .inner end -->
@@ -27,7 +27,7 @@
     <div id="main" role="main">
       <div id="content">
         <div class="main_image">
-          <a href="#"><img src="images/top/main_image.png" alt="想像以上の旅をご提供いたします。" /></a>
+          <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/top/main_image.png" alt="想像以上の旅をご提供いたします。" /></a>
         </div><!-- .main_image end -->
         <div id="top_menu">
           <ul>
@@ -42,8 +42,8 @@
       </div><!-- end #content -->
       <div id="top_info">
         <div class="inner clearfix">
-          <h2><img src="images/top/ttl_news.png" width="80" height="20" alt="お知らせ" /></h2>
-          <p class="list_link"><a href="#"><img src="images/top/btn_linklist.png" width="76" height="21" alt="一覧を見る" /></a></p>
+          <h2><img src="<?php bloginfo('template_url'); ?>/images/top/ttl_news.png" width="80" height="20" alt="お知らせ" /></h2>
+          <p class="list_link"><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/top/btn_linklist.png" width="76" height="21" alt="一覧を見る" /></a></p>
           <ul>
               <li>
                 <span class="info_li_inner">
@@ -121,7 +121,7 @@
     </div><!-- .footer_social end -->
     <div class="textwidget">
       <p>
-        <a href="#"><img src="images/bnr_blog.jpg" width="215" height="110" alt="社長ブログ"></a>
+        <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/bnr_blog.jpg" width="215" height="110" alt="社長ブログ"></a>
       </p>
     </div><!-- end .textwidget -->
     <p class="top_link"><a href="#wrap">TOPへ戻る</a></p>
