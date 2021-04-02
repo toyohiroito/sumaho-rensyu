@@ -28,7 +28,7 @@
       </div>
     </div><!-- #footer_menu end -->
     <p id="copyright">
-      <small>Copyright &copy; アジアパシフィック旅行社 All rights reserved.</small>
+      <small>Copyright &copy; <?php bloginfo('name'); ?> All rights reserved.</small>
     </p>
   </div><!-- #footer end -->
 </div><!-- #footer-container end -->
