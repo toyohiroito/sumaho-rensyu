@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8" />
-<title>アジアパシフィック旅行社</title>
+<title><?php bloginfo('name'); ?></title>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url') ?>" />
 <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/images/favicon.ico" />
 <link rel="apple-touch-icon-precomposed" href="<?php bloginfo('template_url') ?>/images/apple-touch-icon.png" />
@@ -14,7 +14,7 @@
   <div id="header" role="banner">
     <div class="inner clearfix">
       <h1 class="site-id">
-        <a href="#"><img src="<?php bloginfo('template_url') ?>/images/site_id.png" width="322" height="42" alt="魅力あふれるアジア・太平洋の旅ならアジアパシフィック旅行社" /></a>
+        <a href="#"><img src="<?php echo home_url('/') ?>/images/site_id.png" width="322" height="42" alt="<?php bloginfo('description'); ?><?php bloginfo('name'); ?>" /></a>
       </h1>
       <div class="utility">
         <ul>
