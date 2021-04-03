@@ -14,7 +14,7 @@
   <div id="header" role="banner">
     <div class="inner clearfix">
       <h1 class="site-id">
-        <a href="#"><img src="<?php echo home_url('/') ?>/images/site_id.png" width="322" height="42" alt="<?php bloginfo('description'); ?><?php bloginfo('name'); ?>" /></a>
+        <a href="<?php echo home_url('/') ?>"><img src="<?php bloginfo('template_url'); ?>/images/site_id.png" width="322" height="42" alt="<?php bloginfo('description'); ?><?php bloginfo('name'); ?>" /></a>
       </h1>
       <div class="utility">
         <ul>
