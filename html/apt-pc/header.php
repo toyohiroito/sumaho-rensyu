@@ -9,7 +9,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body class="home">
+<body class="<?php body_class(); ?>">
 <div id="wrap">
   <div id="header" role="banner">
     <div class="inner clearfix">
