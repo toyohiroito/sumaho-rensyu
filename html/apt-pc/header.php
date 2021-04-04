@@ -36,3 +36,12 @@
       </ul>
     </div>
   </div><!-- #header end -->
+  <?php
+    if(!is_front_page()) :
+  ?>
+  <div class="category_image">
+      <img src="<?php bloginfo('template_url'); ?>/images/sub/img_cat_def.png" width="950" height="120" alt="">
+  </div><!-- .category_image end -->
+  <?php
+    endif;
+  ?>
