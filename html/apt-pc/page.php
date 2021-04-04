@@ -16,7 +16,7 @@
           endif;
         ?>
         <?php
-          get_template(page_top_link);
+          get_template_part('page_top_link');
         ?>
       </div><!-- end #content -->
     </div><!-- end #main -->
