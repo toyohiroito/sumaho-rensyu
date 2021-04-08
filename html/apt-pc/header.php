@@ -34,12 +34,14 @@
       </div><!-- .utility end -->
     </div><!-- .inner end -->
     <?php
+    add_filter('nav_menu_css_class', 'apt_slug_nav', 10, 2);
       wp_nav_menu(array(
         'container' => 'div',
         'container_id' => 'global_nav',
         'theme_location' => 'place_px_global',
         'depth' => 3,
       ));
+    remove_filter('nav_menu_css_class', 'apt_slug_nav');
     ?>
   </div><!-- #header end -->
   <?php
