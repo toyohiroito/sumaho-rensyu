@@ -10,3 +10,11 @@ register_nav_menus(
   )   
 );
 
+// wp_nav_menuにslugのクラス属性を追加
+function apt_slug_nav($css, $item) {
+  if($item->object == 'page') {
+    $page = get_post($item->object_id);
+    $css[] = 'menu-item-slug-' .esc_attr($page->post_name);
+  }
+  return $css;
+}
