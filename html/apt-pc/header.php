@@ -33,11 +33,14 @@
         </div><!-- #search end -->
       </div><!-- .utility end -->
     </div><!-- .inner end -->
-    <div id="global_nav">
-      <ul>
-        <li class="current-menu-item menu-item-slug-top"><a href="#">トップページ</a></li>
-      </ul>
-    </div>
+    <?php
+      wp_nav_menu(array(
+        'container' => 'div',
+        'container_id' => 'global_nav',
+        'theme_location' => 'place_px_global',
+        'depth' => 3,
+      ));
+    ?>
   </div><!-- #header end -->
   <?php
     if(!is_front_page()) :
