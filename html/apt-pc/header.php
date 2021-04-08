@@ -17,9 +17,12 @@
         <a href="<?php echo home_url('/') ?>"><img src="<?php bloginfo('template_url'); ?>/images/site_id.png" width="322" height="42" alt="<?php bloginfo('description'); ?><?php bloginfo('name'); ?>" /></a>
       </h1>
       <div class="utility">
-        <ul>
-          <li><a href="#">採用情報</a></li>
-        </ul>
+        <?php
+          wp_nav_menu(array(
+            'container' => false,
+            'theme_location' => 'place_pc_utility',
+          ));
+        ?>
         <div id="search" role="search">
           <form role="search" method="get" id="searchform" class="searchform" action="#">
             <div>
