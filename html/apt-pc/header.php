@@ -51,5 +51,10 @@
       <img src="<?php bloginfo('template_url'); ?>/images/sub/img_cat_def.png" width="950" height="120" alt="">
   </div><!-- .category_image end -->
   <?php
+    if(class_exists('WP_SiteManager_bread_crumb')) :
+      WP_SiteManager_bread_crumb::bread_crumb('navi_element=div&elm_id=bread_crumb');
+    endif;
+  ?> 
+  <?php
     endif;
   ?>
