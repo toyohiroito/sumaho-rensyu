@@ -32,4 +32,4 @@ function apt_page_ancestor() {
     $obj->post_title = $post->post_title;
   }
   return $obj;
-}  
+}
