@@ -2,6 +2,11 @@
   <div id="container">
     <div id="main" role="main">
       <div id="content">
+        <h1 class="page_ttl">
+          <?php
+            single_cat_title();
+          ?>
+        </h1>
         <?php
           if(have_posts()) :
             while(have_posts()) :
@@ -18,6 +23,9 @@
         <?php the_content(); ?>
         <?php
             endwhile;
+          endif;
+          if(class_exists('WP_SiteManager_page_navi')) :
+            WP_SiteManager_page_navi::page_navi();
           endif;
         ?>
         <?php
