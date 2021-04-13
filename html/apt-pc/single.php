@@ -25,6 +25,6 @@
         ?>
       </div><!-- end #content -->
     </div><!-- end #main -->
-<?php get_sidebar('page'); ?>
+<?php get_sidebar('post'); ?>
   </div><!-- end #container -->
 <?php get_footer(); ?>
