@@ -2,7 +2,7 @@
   $anc = apt_page_ancestor();
 ?>
 <div id="sidebar">
-  <div id="side_nav">
+  <div class="side_nav">
     <h2>
       <?php
         echo esc_html($anc->post_title);
