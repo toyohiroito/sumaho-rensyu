@@ -46,3 +46,19 @@ function apt_category_id($tax='category') {
   }
   return $cat_id;
 }
+
+// カテゴリ情報を取得する(step4-3)
+function apt_category_info($tax='category') {
+  global $post;
+  $cat = get_the_terms($post->ID, $tax);
+  $obj = new stdClass;
+  if($cat) {
+    $cat = array_shift($cat);
+    $obj->name = $cat->name;
+    $obj->slug = $cat->slug;
+  } else {
+    $obj->name = '';
+    $obj->slug = '';
+  }
+    return $obj;
+}
