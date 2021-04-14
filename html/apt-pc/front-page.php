@@ -7,7 +7,7 @@
       <div id="content">
         <div id="tour_info" class="clearfix">
           <h2><img src="<?php bloginfo('template_url') ?>/images/top/ttl_tour.png" width="183" height="25" alt="最新ツアー情報"></h2>
-          <p class="list_link"><a href="#"><img src="<?php bloginfo('template_url') ?>/images/top/btn_linklist.png" width="80" height="29" alt="一覧を見る"></a></p>
+          <p class="list_link"><a href="<?php echo get_permalink(get_page_by_path('news')); ?>"><img src="<?php bloginfo('template_url') ?>/images/top/btn_linklist.png" width="80" height="29" alt="一覧を見る"></a></p>
           <div class="inner clearfix">
             <div class="tour_column">
               <h3><a href="#">ハワイラグジュアリーステイ3日間</a></h3>
@@ -31,16 +31,17 @@
         </div><!-- end #tourInfo -->
         <div id="top_info" class="clearfix">
           <h2><img src="<?php bloginfo('template_url') ?>/images/top/ttl_news.png" width="183" height="25" alt="お知らせ"></h2>
-          <p class="list_link"><a href="#"><img src="<?php bloginfo('template_url') ?>/images/top/btn_linklist.png" width="80" height="29" alt="一覧を見る"></a></p>
+          <p class="list_link"><a href="<?php echo get_permalink(get_page_by_path('news')); ?>"><img src="<?php bloginfo('template_url') ?>/images/top/btn_linklist.png" width="80" height="29" alt="一覧を見る"></a></p>
           <div class="inner clearfix">
             <ul>
-              <li>
-                <span class="info_li_inner">
-                  <span class="news_date">2013年04月23日</span>
-                  <span class="news_category ir">IR情報</span>
-                  <a href="#">2014年4月期 第3四半期報告書</a>
-                </span>
-              </li>
+              <?php
+                query_posts(array('post_type' => 'post'));
+                while(have_posts()) :
+                  the_post();
+                  get_template_part('content-top-info');
+                endwhile;
+                wp_reset_query();
+              ?>
             </ul>
           </div>
         </div><!-- end #topInfo -->
